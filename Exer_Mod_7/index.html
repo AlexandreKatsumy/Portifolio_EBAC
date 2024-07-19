@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de números</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Validador de Números Crescentes</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#contact" title="Fale comigo!">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="validador">
+        <div class="container">
+            <div class="form-space">
+                <span>
+                    Insira um número A que seja menor que um número B, com números a sua escolha, para que o formulário seja válido.
+                </span>
+                <form id="form-validador">
+                    <div class="input">
+                        <label for="numeroA">Insira o Número A</label>
+                        <input type="number" id="numero-A" placeholder="Número A (insira o número menor)" required />
+                    </div>
+                    <div class="input">
+                        <label for="numeroB">Insira o Número B</label>
+                        <input type="number" id="numero-B" placeholder="Número B (insira o número maior)" required />
+                    </div>
+                    <p class="error-message">
+                        O <b>número A</b> precisa ser <b>menor</b> que o <b>número B</b>.
+                    </p>
+                    <div class="input">
+                        <button type="submit" id="btn-submeter">Submeter</button>
+                    </div>
+                </form>
+                <p class="success-message"></p>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

@@ -4,12 +4,12 @@ const numeroB = document.getElementById('numero-B');
 let formValido = false;
 
 function validaNumero(numeroMenor, numeroMaior) {
-    const numeroMenorA = numeroMenor;
-    const numeroMaiorB = numeroMaior;
+    const numeroMenorA = parseInt(numeroMenor);
+    const numeroMaiorB = parseInt(numeroMaior);
     return numeroMenorA < numeroMaiorB;
 }
 
-form.addEventListener('submit', function(e) {
+form.addEventListener('submit', function(e) {   
     e.preventDefault();
 
     const mensagemSucesso = `O número A: <b>${numeroA.value}</b> é menor que o número B: <b>${numeroB.value}. Formulário é valido!`;

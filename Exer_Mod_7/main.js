@@ -4,8 +4,8 @@ const numeroB = document.getElementById('numero-B');
 let formValido = false;
 
 function validaNumero(numeroMenor, numeroMaior) {
-    const numeroMenorA = numeroMenor;
-    const numeroMaiorB = numeroMaior;
+    const numeroMenorA = parseInt(numeroMenor);
+    const numeroMaiorB = parseInt(numeroMaior);
     return numeroMenorA < numeroMaiorB;
 }
 
